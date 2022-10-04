@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 500px;
+            height: 250px;
+            /* max-width: 500px; */
+        }
+
+        .hop {
+            position: absolute;
+            bottom: 0;
+            top: 450px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 60px;
+            height: 30px;
+        }
+
+        .row {
+            display: flex;
+            background: white;
+        }
+
+
+        .black,
+        .white {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .black {
+            background: black;
+        }
+
+        .white {
+            background: rgb(189, 76, 76);
+        }
+
+        .black:hover,
+        .white:hover {
+            transform: perspective(50px) rotate3d(180, -45, 0, -135deg);
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            background: grey;
+            border-radius: 50%;
+            top: 5px;
+            bottom: 0;
+            left: 5px;
+        }
+
+        .big {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    </style>
+
+    <div class="box">
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="circle"></div>
+        <!-- <div class="big"></div> -->
+    </div>
+    <br>
+    <button class="hop">Hop</button>
+
+    <script src="checkerboard.js"></script>
+</body>
+
+</html>
